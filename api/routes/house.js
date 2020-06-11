@@ -49,7 +49,7 @@ router.get('/', (request, response , next) => {
     
     ibmdb.open(connStr, function (err,conn) {
         if (err){
-          return respose.json({success:-1, message:err});
+          return response.json({success:-1, message:err});
         }
         conn.query("SELECT * FROM "+process.env.DB_SCHEMA+".HOUSE_INFO;", function (err, data) {
           if (err){
@@ -96,8 +96,9 @@ router.get('/:Id', (request, response , next) => {
       }
         else{
             
+         
           var query = "UPDATE "+process.env.DB_SCHEMA+".HOUSE_INFO SET OWNERNAME='"+house['name']+"',SURNAME='"+house['surname']+"',CONTACT='"+house['contact']+"',BEDROOMS='"+house['rooms']+"',GARAGE='"+house['garage']+"',PRICE="+house['price']+" WHERE HOUSEID="+house['id']+";";
-        
+          
           conn.query(query, function (err, data) {
             if (err){
               return response.json({success:-3, message:err});
