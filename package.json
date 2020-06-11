@@ -1,5 +1,5 @@
 {
-  "name": "crud-phonebook-api-nodejs",
+  "name": "crud-api-nodejs",
   "version": "1.0.0",
   "description": "A Node.JS Restful API Tutorial Project interacting with DB2 on IBM Cloud",
   "main": "index.js",
