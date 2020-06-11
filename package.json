@@ -1,0 +1,27 @@
+{
+  "name": "crud-phonebook-api-nodejs",
+  "version": "1.0.0",
+  "description": "A Node.JS Restful API Tutorial Project interacting with DB2 on IBM Cloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "Node",
+    "Crud",
+    "API"
+  ],
+  "author": "Lungelo Sikobi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "ibm_db": "^2.7.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
